@@ -34,4 +34,3 @@ console.log(anotherString);
 
 const newStr1 = "   manoj   ";
 
-log
