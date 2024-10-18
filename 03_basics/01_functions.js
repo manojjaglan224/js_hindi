@@ -41,21 +41,61 @@
 //  const result = addTwoNum(3.9, 4.2) 
 // console.log(result); // wil return undefined
 
-function loggedInMessage(username){
+// function loggedInMessage(username){
 
-    if(!username){
+//     if(!username){
 
-        console.log("please enter a username");
+//         console.log("please enter a username");
 
-        return // it will ensure that if "if condition gets executed function will end here itself"
+//         return // it will ensure that if "if condition gets executed function will end here itself"
 
         
-    }
+//     }
     
    // return `${username} Manoj is logged IN` // backtics key is located prior to num1
-}
+//}
  
 
 //console.log(loggedInMessage("Jaglan")); // fucntion will execute but will not print anything without console.log
 
 
+// function calPrice(...num1){ // here it is rest opertator and spread operators are same depends on usablity
+//     return num1
+// }
+
+// console.log(calPrice(23,43,12, 2000))
+
+// function calPrice(val1, val2, ...num1){ // here it is rest opertator and spread operators are same depends on usablity
+//     return num1
+// }
+
+// console.log(calPrice(23,43,12, 2000)) // will only return 12 and 2000 becasue first two values are taken by val1 and val2
+
+const user = {
+username: "Jaglan",
+price: 899
+
+}
+
+
+function handleObject(anyObject){
+
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+//handleObject(user)
+
+handleObject(
+    {
+        username: "sam",
+        price: 399
+    }
+)
+
+const mynewArry = [100, 200, 300, 600]
+
+function returnSecondvalue(getArray){
+    return getArray[3]
+}
+
+console.log(returnSecondvalue(mynewArry));
