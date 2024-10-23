@@ -12,6 +12,8 @@ const newNum = myNum
 .map((num) => num * 10)
 .map((num) => num+1)
 .filter( (num) => num >=40 )
-
+// will return all numbers greater than 40
 
 console.log(newNum);
+
+
