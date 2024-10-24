@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DoM</title>
+</head>
+<body style="background-color: black; color: white">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang (langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)    
+    }
+
+    addLang("Python")
+    addLang("TypeScript")
+
+
+    function addOptiLan(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLan("golang")
+
+
+    //Edit values
+
+    const iindLang = document.querySelector("li:nth-child(2)") //mind the syntax
+
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+
+iindLang.replaceWith(newLi)
+
+
+// edit more
+// this will replace js with ts
+const firstLang = document.querySelector("li:nth-child(1)")
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+//remove // this will remove last language from list
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+
+    
+</script>
+</html>
