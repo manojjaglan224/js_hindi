@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Its JavaScript </h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+</body>
+<script>
+
+const printStart = function(){console.log("Manoj", Date.now())}
+let intrID;
+
+const startPrinting = function(){
+                                    intrID = setInterval(printStart, 2000, "hi");
+                                    console.log("PRINTING STARTED");
+                                    }
+
+
+const stopPrinting =  function(){
+                                        clearInterval(intrID);
+                                        console.log("PRINTING STOPPED");
+                                        intrID = null;
+                                        
+                                    }
+
+   
+   
+document.querySelector('#start').addEventListener('click', startPrinting)
+     
+document.querySelector('#stop').addEventListener('click', stopPrinting)
+
+
+   
+
+
+</script>
+</html>
