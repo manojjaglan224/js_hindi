@@ -96,3 +96,26 @@ async function consumeP5(){
    
 }
 consumeP5()
+
+// async function getallusers(){
+//    try {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     //console.log(response);
+//     const data = await (response.json()) 
+//     console.log(data);
+    
+// }catch(error){
+//     console.log(error);
+    
+// }
+// }
+// getallusers()
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+return response.json();
+}).then((data) => {
+    console.log(data);    
+}).catch((error) => {console.log(error);})
+
+// one thing to note that last block of code is getting executed in the last.
