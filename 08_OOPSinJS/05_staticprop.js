@@ -36,3 +36,5 @@ class Teacher extends User{
 
     const cName = new Teacher("JS", "JS@gmail.com")
     cName.logMe()
+
+    
